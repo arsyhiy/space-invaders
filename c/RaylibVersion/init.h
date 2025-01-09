@@ -9,10 +9,8 @@
 #define E_BULLETS 3
 
 #include "load_image.h"
-
-
-
 #include "structure.h"
+#include "time.h"
 
 extern struct invaders_t invaders;
 extern struct score_t score;
@@ -43,10 +41,6 @@ static SDL_Surface *game_over_img;
 #define P_HEIGHT 10
 #define B_WIDTH 5
 #define B_HEIGHT 15
-
-
-
-
 
 
 //Initialize the score structure and game state
@@ -168,5 +162,20 @@ void init_saucer() {
 }
 
 
+
+
+
+//Determine game level
+void calculate_level() {
+
+	if (invaders.killed != 0 && invaders.killed % 50 == 0) {
+		
+		score.level++;
+		init_invaders();
+		init_bases();
+		init_saucer();
+		pause_for(500);
+	}
+}
 
 

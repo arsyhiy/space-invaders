@@ -27,7 +27,6 @@
 #include "collision.h"
 #include "time.h"
 #include "ai.h"
-#include "calc.h"
 #include "player.h"
 #include "draw.h"
 
