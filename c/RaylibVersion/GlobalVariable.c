@@ -16,4 +16,5 @@ struct base_t base[BASE];
 struct bullet_t e_bullets[E_BULLETS];
 
 
+enum state_t {menu, options, game, game_over, pause};
 enum state_t state;

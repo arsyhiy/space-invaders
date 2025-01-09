@@ -32,8 +32,9 @@
 #include "draw.h"
 
 
-
+enum state_t {menu, options, game, game_over, pause};
 extern enum state_t state;
+extern Uint32 title_time; 
 
 // Main programm
 int main() {

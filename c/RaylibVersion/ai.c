@@ -1,5 +1,6 @@
 #include "ai.h"
 #include "structure.h"
+
 #define BASE 4
 #define BASE_WIDTH 60
 #define BASE_HEIGHT 40
@@ -8,19 +9,21 @@
 #define E_WIDTH 30
 
 
-extern enum state_t state;
-
 extern struct invaders_t invaders;
 extern struct score_t score;
 extern struct player_t player;
 extern struct saucer_t saucer;
-extern struct base_t base[BASE];
 extern struct bullet_t e_bullets[E_BULLETS];
+enum state_t {menu, options, game, game_over, pause};
+
+
 
 
 //Determine for game over event
 void game_over_ai() {
-	
+
+    extern enum state_t state;
+
 	if (player.lives < 0) {
 		
 		state = game_over;
