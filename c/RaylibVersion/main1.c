@@ -32,6 +32,9 @@
 #include "draw.h"
 
 
+
+extern enum state_t state;
+
 // Main programm
 int main() {
 

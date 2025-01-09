@@ -4,8 +4,8 @@
 #include "damage.h"
 #include "time.h"
 
-struct bullet_t bullets[P_BULLETS];
-struct bullet_t e_bullets[E_BULLETS];
+extern struct bullet_t bullets[P_BULLETS];
+extern struct bullet_t e_bullets[E_BULLETS];
 
 
 //Detect any collision between any two non rotated rectangles

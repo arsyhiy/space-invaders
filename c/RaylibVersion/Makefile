@@ -1,3 +1,3 @@
 all:
-	gcc main1.c -lSDL  -o invaders
+	gcc main1.c ai.c GlobalVariable.c  -lSDL  -o invaders
 

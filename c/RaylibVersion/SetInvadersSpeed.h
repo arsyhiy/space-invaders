@@ -1,5 +1,14 @@
 #include "structure.h"
-struct invaders_t invaders;
+
+#define BASE 4
+#define BASE_WIDTH 60
+#define BASE_HEIGHT 40
+#define P_BULLETS 1
+#define E_BULLETS 3
+#define E_WIDTH 30
+
+
+extern struct invaders_t invaders;
 
 //Set invader movment speed
 void set_invaders_speed() {

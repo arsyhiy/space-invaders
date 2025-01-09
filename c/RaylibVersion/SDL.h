@@ -3,5 +3,4 @@
 
 
 enum state_t {menu, options, game, game_over, pause};
-enum state_t state;
 

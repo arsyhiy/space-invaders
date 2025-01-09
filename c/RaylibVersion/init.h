@@ -14,11 +14,11 @@
 
 #include "structure.h"
 
-struct invaders_t invaders;
-struct score_t score;
-struct player_t player;
-struct saucer_t saucer;
-struct base_t base[BASE];
+extern struct invaders_t invaders;
+extern struct score_t score;
+extern struct player_t player;
+extern struct saucer_t saucer;
+extern struct base_t base[BASE];
 
 
 

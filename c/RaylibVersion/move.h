@@ -3,9 +3,9 @@
 #define WIDTH 600
 #define E_WIDTH 30
 
-struct invaders_t invaders;
-struct saucer_t saucer;
-struct player_t player;
+extern struct invaders_t invaders;
+extern struct saucer_t saucer;
+extern struct player_t player;
 
 //Set invader movment speed
 void set_invaders_speed() {
